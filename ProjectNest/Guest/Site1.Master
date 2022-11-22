@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ProjectNest.Guest.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title></title>
+    <style>
+
+
+
+       nav{
+    background-color:green;
+    height:50px;
+}
+nav ul{
+    text-align:center;
+   
+}
+    nav li {
+        display: inline-block;
+        margin-top: 1%;
+    }
+
+
+
+nav li a{
+    color:white;
+    text-decoration:none;
+    padding:0px 90px;
+   
+}
+
+
+
+nav li a:hover{
+    color:red;
+    transition:all 0.4S ;
+}
+    </style>
+
+
+
+    <nav>
+                    <ul>
+                         <li><a href="GuestHome.aspx">Home</a></li>
+                        <li><a href="login.aspx">Login</a></li>
+                        <li><a href="UserRegister.aspx">Register</a></li>
+                        
+                    </ul>
+
+
+
+           </nav>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

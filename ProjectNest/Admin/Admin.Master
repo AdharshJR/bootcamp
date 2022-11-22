@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ProjectNest.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+
+
+
+       nav{
+    background-color: cyan;
+    height:50px;
+}
+nav ul{
+    text-align:center;
+   
+}
+    nav li {
+        display: inline-block;
+        margin-top: 1%;
+    }
+
+
+
+nav li a{
+    color: floralwhite;
+    text-decoration:none;
+    padding:0px 90px;
+   
+}
+
+
+
+nav li a:hover{
+    color:red;
+    transition:all 0.4S ;
+}
+    </style>
+
+
+
+    <nav>
+                    <table><tr>
+                         <td><a href="AdminHome.aspx">Home</a></td>
+                        <td></td>
+                        <td><a href="ProductRegistration.aspx">Product Registration</a></td>
+                        <td></td>
+                        <td><a href="AdminStudentDetails.aspx">User Confirmtion</a></td>
+                        <td></td>
+                        <td><a href="AdminComplaint.aspx">Complaints</a></td>
+                        <td></td>
+                        <td><a href="AdminQuery.aspx">Queries</a></td>
+                        <td></td>
+                        <td><a href="../Guest/Login.aspx">Log Out</a></td>
+                    </tr></table>
+
+
+
+           </nav>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
